@@ -34,7 +34,3 @@ def dec_to_bin(num_decimal_digits=8):
         print(f"The binary representation of {decimal} is {binary}")
     else:
         print("Invalid input. Please enter a valid decimal value.")
-
-
-
-dec_to_bin()
