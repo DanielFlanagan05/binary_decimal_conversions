@@ -1,4 +1,7 @@
 def dec_to_bin(num_decimal_digits=8):
+    """
+    Converts decimal floating point values to binary. Works only for unsigned values
+    """
     decimal = input("\nEnter a valid decimal value: ")
     num = False
 
