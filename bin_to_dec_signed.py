@@ -19,7 +19,7 @@ def convert_binary_to_decimal(binary_str):
 
 def bin_to_dec_signed():
     """
-    A function to convert binary values to decimal. Works with floating point numbers. Only works for signed values.
+    Converts signed binary values to decimal. Works with floating point numbers. Only works for signed values.
     """
     binary_str = input("Enter a binary number (with optional floating point): ")
 
