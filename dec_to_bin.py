@@ -1,6 +1,8 @@
 def dec_to_bin(num_decimal_digits=8):
     decimal = input("\nEnter a valid decimal value: ")
     num = False
+
+    # Check if input is fractional and if it is valid
     if "." in decimal:
         dec_index = decimal.index(".")
         if decimal[0:dec_index].isdigit() and decimal[dec_index+1:].isdigit():
@@ -12,7 +14,6 @@ def dec_to_bin(num_decimal_digits=8):
         integer_part = int(decimal[0:dec_index]) if "." in decimal else int(decimal)
         fractional_part = float("0." + decimal[dec_index+1:]) if "." in decimal else 0
         
-        # Convert integer part to binary
         binary_integer = bin(integer_part)[2:]
         
         # Convert fractional part to binary
@@ -25,7 +26,7 @@ def dec_to_bin(num_decimal_digits=8):
             else:
                 binary_fractional += "0"
         
-        # Combine integer and fractional binary parts
+        # Combine integer and fractional parts
         if binary_fractional:
             binary = binary_integer + "." + binary_fractional
         else:
